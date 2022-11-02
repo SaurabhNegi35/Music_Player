@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Artist</title>
+    <!-- it is connected to two stylesheets -->
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="Single_Playlist.css" />
+    <!-- this is the main stylesheet -->
+    <!-- desktop first approach is used for the same. -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="Second_Playlist_Responsive.css"
+    />
+
+    <!-- this is the style sheet with all the media queries -->
+    <!-- this script is just for font awesome fonts -->
+    <script
+      src="https://kit.fontawesome.com/2d9b67a497.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+  </head>
+  <!-- body -->
+
+  <body>
+    <!-- top navigation bar -->
+    <nav class="navigation-bar">
+      <!-- this div contains logo and title  -->
+      <div class="title-combo">
+        <div class="website-logo">
+          <img src="images/website_logo.png" alt="Logo" />
+        </div>
+        <div class="website-name">
+          <h6>MUSIC</h6>
+          <h4>PLAYER</h4>
+        </div>
+      </div>
+
+      <!-- this is the animated favourites text -->
+      <div class="favs">
+        <h4>
+          HOME
+        </h4>
+      </div>
+
+      <div class="favs">
+        <h4>
+          FAVOURITES
+        </h4>
+      </div>
+      <div class="favs">
+        <h4>
+          ARTISTS
+        </h4>
+      </div>
+
+      <!-- this is for search bar -->
+      <div class="search-bar">
+        <div>
+          <!-- magnifying glass- search icon -->
+          <i class="fas fa-search search-ico"></i>
+        </div>
+        <input type="text" name="search" placeholder="Search" />
+        <div>
+          <!-- mic icon -->
+          <i class="fas fa-microphone mic-ico"></i>
+        </div>
+      </div>
+
+      <!-- this is for notification bell -->
+      <div class="notification-bell">
+        <i class="fa-sharp fa-solid fa-bell"></i> Notifications
+      </div>
+
+      <!-- this is for profile picture -->
+      <div class="profile-picture">
+        <i class="fa-solid fa-user"></i>
+      </div>
+    </nav>
+
+    <!-- this is the main center part of the page and it is divided into two sections, namely section 1 and section 2-->
+    <!-- I have separated these sections using the aside tag for each section -->
+    <main>
+      <!-- aside section 1 -->
+      <aside class="aside section-1">
+        <div class="artists">
+          <p>ARTIST</p>
+          <h1>Charlie Puth</h1>
+          <span>239K+ Followers</span>
+        </div>
+
+        <div class="artists-para">
+          <p>
+            Charles Otto Puth Jr. is an American singer and songwriter. His
+            initial exposure came through the viral success of his song videos
+            uploaded to YouTube. Puth initially signed with the record label
+            eleveneleven after performing on The Ellen DeGeneres Show, while
+            songwriting and producing for other artists
+          </p>
+        </div>
+
+        <div class="artist-gap"></div>
+
+        <div class="top-charts">
+          <!-- latest english section -->
+          <h1 class="language-heading">
+            Popular Songs
+          </h1>
+          <!-- contents of latest english -->
+          <div class="language-content top-charts-content">
+            <div>
+              <img src="media/english_trending/attention.jfif" />
+              <p>Attention</p>
+              <p>Charlie Puth</p>
+            </div>
+            <div>
+              <img src="media/english_trending/we_don't_talk_anymore.jfif" />
+              <p>We Don't Talk Anymore</p>
+              <p>Charlie Puth & Selena Gomez</p>
+            </div>
+            <div>
+              <img src="media/english_trending/light_switch.jfif" />
+              <p>Light Switch</p>
+              <p>Charlie Puth</p>
+            </div>
+            <div>
+              <img src="media/english_trending/left_and_right.jfif" />
+              <p>Left and Right</p>
+              <p>Charlie Puth ft. Jung Kook</p>
+            </div>
+
+            <div>
+              <img src="media/english_trending/how_long.jfif" />
+              <p>How Long</p>
+              <p>Charlie Puth</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- this is for the jumbotron -->
+
+        <!-- now the playlist part begins -->
+        <div class="playlist-items">
+          <div>
+            <h1>&nbsp;Artist Playlist</h1>
+          </div>
+          <!-- playlist item -->
+          <div class="playlist-item">
+            <div class="left">
+              <div>
+                01
+              </div>
+              <div>
+                <img src="media/english_trending/attention.jfif" />
+                <div class="play-btn">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <div>
+                <h5>
+                  Attention
+                </h5>
+                <p>
+                  Charlie Puth
+                </p>
+              </div>
+            </div>
+            <div class="center">
+              3:31
+            </div>
+            <div class="right">
+              <div>
+                <i class="far fa-heart"></i>
+              </div>
+              <div>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+          </div>
+          <!-- playlist item -->
+          <div class="playlist-item">
+            <div class="left">
+              <div>
+                02
+              </div>
+              <div>
+                <img src="media/english_trending/how_long.jfif" />
+                <div class="play-btn">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <div>
+                <h5>
+                  How Long
+                </h5>
+                <p>
+                  Charlie Puth
+                </p>
+              </div>
+            </div>
+            <div class="center">
+              3:20
+            </div>
+            <div class="right">
+              <div>
+                <i class="far fa-heart"></i>
+              </div>
+              <div>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+          </div>
+          <!-- playlist item -->
+          <div class="playlist-item">
+            <div class="left">
+              <div>
+                03
+              </div>
+              <div>
+                <img src="media/english_trending/we_don't_talk_anymore.jfif" />
+                <div class="play-btn">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <div>
+                <h5>
+                  We Don't Talk Anymore
+                </h5>
+                <p>
+                  Charlie Puth & Selena Gomez
+                </p>
+              </div>
+            </div>
+            <div class="center">
+              3:37
+            </div>
+            <div class="right">
+              <div>
+                <i class="far fa-heart"></i>
+              </div>
+              <div>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+          </div>
+          <!-- playlist item -->
+          <div class="playlist-item">
+            <div class="left">
+              <div>
+                04
+              </div>
+              <div>
+                <img src="media/english_trending/nine_track_mind.jfif" />
+                <div class="play-btn">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <div>
+                <h5>
+                  One Call Away
+                </h5>
+                <p>
+                  Charlie Puth
+                </p>
+              </div>
+            </div>
+            <div class="center">
+              3:14
+            </div>
+            <div class="right">
+              <div>
+                <i class="far fa-heart"></i>
+              </div>
+              <div>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+          </div>
+          <!-- playlist item -->
+          <div class="playlist-item">
+            <div class="left">
+              <div>
+                05
+              </div>
+              <div>
+                <img src="media/english_trending/nine_track_mind.jfif" />
+                <div class="play-btn">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <div>
+                <h5>
+                  Dangerously
+                </h5>
+                <p>
+                  Charlie Puth
+                </p>
+              </div>
+            </div>
+            <div class="center">
+              3:19
+            </div>
+            <div class="right">
+              <div>
+                <i class="far fa-heart"></i>
+              </div>
+              <div>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+          </div>
+          <!-- playlist item -->
+          <div class="playlist-item">
+            <div class="left">
+              <div>
+                06
+              </div>
+              <div>
+                <img src="media/english_trending/nine_track_mind.jfif" />
+                <div class="play-btn">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <div>
+                <h5>
+                  Losing My Mind
+                </h5>
+                <p>
+                  Charlie Puth
+                </p>
+              </div>
+            </div>
+            <div class="center">
+              3:32
+            </div>
+            <div class="right">
+              <div>
+                <i class="far fa-heart"></i>
+              </div>
+              <div>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+          </div>
+          <!-- playlist item -->
+          <div class="playlist-item">
+            <div class="left">
+              <div>
+                07
+              </div>
+              <div>
+                <img src="media/english_trending/loser.jfif" />
+                <div class="play-btn">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <div>
+                <h5>
+                  Loser
+                </h5>
+                <p>
+                  Charlie Puth
+                </p>
+              </div>
+            </div>
+            <div class="center">
+              5:37
+            </div>
+            <div class="right">
+              <div>
+                <i class="far fa-heart"></i>
+              </div>
+              <div>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+          </div>
+          <!-- playlist item -->
+          <div class="playlist-item">
+            <div class="left">
+              <div>
+                08
+              </div>
+              <div>
+                <img src="media/english_trending/left_and_right.jfif" />
+                <div class="play-btn">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <div>
+                <h5>
+                  Left and Right
+                </h5>
+                <p>
+                  Charlie Puth ft. Jung Kook
+                </p>
+              </div>
+            </div>
+            <div class="center">
+              2:35
+            </div>
+            <div class="right">
+              <div>
+                <i class="far fa-heart"></i>
+              </div>
+              <div>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+          </div>
+          <!-- playlist item -->
+          <div class="playlist-item">
+            <div class="left">
+              <div>
+                09
+              </div>
+              <div>
+                <img src="media/english_trending/loser.jfif" />
+                <div class="play-btn">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <div>
+                <h5>
+                  I Don't Think That I Like Her
+                </h5>
+                <p>
+                  Charlie Puth
+                </p>
+              </div>
+            </div>
+            <div class="center">
+              3:08
+            </div>
+            <div class="right">
+              <div>
+                <i class="far fa-heart"></i>
+              </div>
+              <div>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+          </div>
+          <!-- playlist item -->
+          <div class="playlist-item">
+            <div class="left">
+              <div>
+                10
+              </div>
+              <div>
+                <img src="media/english_trending/light_switch.jfif" />
+                <div class="play-btn">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <div>
+                <h5>
+                  Light Switch
+                </h5>
+                <p>
+                  Charlie Puth
+                </p>
+              </div>
+            </div>
+            <div class="center">
+              3:06
+            </div>
+            <div class="right">
+              <div>
+                <i class="far fa-heart"></i>
+              </div>
+              <div>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+      <!-- one aside section is complete -->
+      <!-- now the second aside section will start from here -->
+      <!-- the page is responsive. please try reducing the width of the page -->
+      <!-- the aside section will collapse and a "more button will be shown to you." -->
+      <!-- clicking on this more button, you will be shown the aside section 2  -->
+      <!-- its position will be absolute at lower resolutions -->
+      <!-- this is the label for that more button -->
+      <label for="more"><i class="fas fa-angle-double-left"></i>More</label>
+      <!-- this is that more button -->
+      <!-- and this is the check box. this will always be hidden -->
+      <!-- check the stylesheet_main.css when the label is clicked, this checkbox will be checked -->
+      <!-- which will invoke the aside section 2 on lower resolutions -->
+      <input type="checkbox" id="more" />
+      <!-- </div> -->
+      <aside class="aside section-2">
+        <!-- similar class will be applicable to both similar artists and recently played -->
+        <div class="similar">
+          <!-- section heading, which also contains the view all button -->
+          <div class="section-heading">
+            <h1>Similar Artists</h1>
+            <div class="view-all-button">
+              View All
+            </div>
+          </div>
+          <!-- list is the container for the contents of similar artists -->
+          <div class="list">
+            <!-- item -->
+            <div class="list-item">
+              <div>
+                <img src="media/english_trending/wolves.jfif" />
+                <div class="play-btn">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <div style="position: absolute; left: 120px; color: black;">
+                <h5>
+                  Wolves
+                </h5>
+                <p class="author-name">
+                  Selena Gomez
+                </p>
+              </div>
+              <div class="extra">
+                <div>
+                  <i class="fas black-color fa-ellipsis-h"></i>
+                </div>
+                <p class="author-name">
+                  3:19
+                </p>
+              </div>
+            </div>
+            <!-- item -->
+            <div class="list-item">
+              <div>
+                <img src="media/english_trending/stitches.jfif" />
+                <div class="play-btn">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <div style="position: absolute; left: 120px; color: black;">
+                <h5>
+                  Stitches
+                </h5>
+                <p class="author-name">
+                  Shawn Mendes
+                </p>
+              </div>
+              <div class="extra">
+                <div>
+                  <i class="fas black-color fa-ellipsis-h"></i>
+                </div>
+                <p class="author-name">
+                  3:26
+                </p>
+              </div>
+            </div>
+            <!-- item -->
+            <div class="list-item">
+              <div>
+                <img src="media/english_trending/2002.jfif" />
+                <div class="play-btn">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <div style="position: absolute; left: 120px; color: black;">
+                <h5>
+                  2002
+                </h5>
+                <p class="author-name">
+                  Anne-Marie
+                </p>
+              </div>
+              <div class="extra">
+                <div>
+                  <i class="fas black-color fa-ellipsis-h"></i>
+                </div>
+                <p class="author-name">
+                  3:06
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- recently played section -->
+          <div class="similar">
+            <!-- section headings, which also contains the view all button -->
+            <div class="section-heading">
+              <h1>Recently Played</h1>
+              <div class="view-all-button">
+                View All
+              </div>
+            </div>
+            <!-- again list is a container for all the contents of recently played section -->
+            <div class="list">
+              <!-- item -->
+              <div class="playlist-item">
+                <div class="left">
+                  <div>
+                    01
+                  </div>
+                  <div>
+                    <img src="media/english_trending/one_kiss.jfif" />
+                    <div class="play-btn">
+                      <i class="fas fa-play"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <h5>
+                      One Kiss
+                    </h5>
+                    <p>
+                      Dua Lipa
+                    </p>
+                  </div>
+                </div>
+                <div class="right">
+                  <div>
+                    <i class="far fa-heart"></i>
+                  </div>
+                </div>
+              </div>
+              <!-- item -->
+              <div class="playlist-item">
+                <div class="left">
+                  <div>
+                    02
+                  </div>
+                  <div>
+                    <img src="media/english_trending/roses.jfif" />
+                    <div class="play-btn">
+                      <i class="fas fa-play"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <h5>
+                      Roses
+                    </h5>
+                    <p>
+                      The Chainsmokers
+                    </p>
+                  </div>
+                </div>
+                <div class="right">
+                  <div>
+                    <i class="far fa-heart"></i>
+                  </div>
+                </div>
+              </div>
+              <!-- item -->
+              <div class="playlist-item">
+                <div class="left">
+                  <div>
+                    03
+                  </div>
+                  <div>
+                    <img src="media/english_trending/sugar.jfif" />
+                    <div class="play-btn">
+                      <i class="fas fa-play"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <h5>
+                      Sugar[Explicit]
+                    </h5>
+                    <p>
+                      Maroon5
+                    </p>
+                  </div>
+                </div>
+                <div class="right">
+                  <div>
+                    <i class="far fa-heart"></i>
+                  </div>
+                </div>
+              </div>
+              <!-- item -->
+              <div class="playlist-item">
+                <div class="left">
+                  <div>
+                    04
+                  </div>
+                  <div>
+                    <img src="media/english_trending/wait.jfif" />
+                    <div class="play-btn">
+                      <i class="fas fa-play"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <h5>
+                      Wait&nbsp;
+                    </h5>
+                    <p>
+                      Maroon5
+                    </p>
+                  </div>
+                </div>
+                <div class="right">
+                  <div>
+                    <i class="far fa-heart"></i>
+                  </div>
+                </div>
+              </div>
+              <!-- item -->
+              <div class="playlist-item">
+                <div class="left">
+                  <div>
+                    05
+                  </div>
+                  <div>
+                    <img src="media/english_trending/perfect.jfif" />
+                    <div class="play-btn">
+                      <i class="fas fa-play"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <h5>
+                      Perfect&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </h5>
+                    <p>
+                      Ed Sheeran
+                    </p>
+                  </div>
+                </div>
+                <div class="right">
+                  <div>
+                    <i class="far fa-heart"></i>
+                  </div>
+                </div>
+              </div>
+              <!-- item -->
+              <div class="playlist-item">
+                <div class="left">
+                  <div>
+                    06
+                  </div>
+                  <div>
+                    <img src="media/english_trending/jalebi_baby.jfif" />
+                    <div class="play-btn">
+                      <i class="fas fa-play"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <h5>
+                      Jalebi Baby
+                    </h5>
+                    <p>
+                      Jason Derulo,Tesher
+                    </p>
+                  </div>
+                </div>
+                <div class="right">
+                  <div>
+                    <i class="far fa-heart"></i>
+                  </div>
+                </div>
+              </div>
+              <!-- item -->
+              <div class="playlist-item">
+                <div class="left">
+                  <div>
+                    07
+                  </div>
+                  <div>
+                    <img src="media/english_trending/sorry.jfif" />
+                    <div class="play-btn">
+                      <i class="fas fa-play"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <h5>
+                      Sorry
+                    </h5>
+                    <p>
+                      Justin Bieber
+                    </p>
+                  </div>
+                </div>
+                <div class="right">
+                  <div>
+                    <i class="far fa-heart"></i>
+                  </div>
+                </div>
+              </div>
+              <!-- item -->
+              <div class="playlist-item">
+                <div class="left">
+                  <div>
+                    08
+                  </div>
+                  <div>
+                    <img src="media/english_trending/deja_vu.jfif" />
+                    <div class="play-btn">
+                      <i class="fas fa-play"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <h5>
+                      Deja Vu
+                    </h5>
+                    <p>
+                      Olivia Rodrigo
+                    </p>
+                  </div>
+                </div>
+                <div class="right">
+                  <div>
+                    <i class="far fa-heart"></i>
+                  </div>
+                </div>
+              </div>
+              <!-- item -->
+              <div class="playlist-item">
+                <div class="left">
+                  <div>
+                    09
+                  </div>
+                  <div>
+                    <img src="media/hindi_trending/kesariya.jfif" />
+                    <div class="play-btn">
+                      <i class="fas fa-play"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <h5>
+                      Kesariya
+                    </h5>
+                    <p>
+                      Pritam, Arijit Singh
+                    </p>
+                  </div>
+                </div>
+                <div class="right">
+                  <div>
+                    <i class="far fa-heart"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </main>
+
+    <!-- main part of the page is over. -->
+    <!-- this is the footer part. -->
+    <!-- its position will be fixed to the screen bottom. -->
+    <footer class="fixed">
+      <div class="active-song-description">
+        <!-- song image -->
+        <div id="song-image">
+          <img src="media/english_trending/No_lie.jpg" />
+        </div>
+        <!-- song name and author -->
+        <div class="song-desc">
+          <div>
+            No Lie
+          </div>
+          <div>
+            Dua Lipa
+          </div>
+          <!-- heart icon and ban icon -->
+        </div>
+        <div class="heart-and-dislike-icon">
+          <span>
+            <i class="far fa-heart"></i>
+          </span>
+          <span>
+            <i class="fa-solid fa-thumbs-down"></i>
+          </span>
+        </div>
+      </div>
+      <!-- these are the main player controls -->
+      <div class="player">
+        <div class="controls">
+          <div><i class="fa-solid player-controls fa-repeat"></i></div>
+          <div><i class="fas player-controls fa-step-backward"></i></div>
+          <div><i class="fas player-controls fa-pause-circle"></i></div>
+          <div><i class="fas player-controls fa-step-forward"></i></div>
+          <div><i class="fa-solid player-controls fa-shuffle"></i></div>
+        </div>
+        <!-- this is the slider -->
+        <div id="slider">
+          <!-- current time -->
+          <div class="time">
+            0:00
+          </div>
+          <div class="slidecontainer">
+            <input
+              type="range"
+              min="0"
+              max="100"
+              value="0"
+              class="slider"
+              id="myRange"
+            />
+          </div>
+          <!-- total time -->
+          <div class="time">
+            3:40
+          </div>
+        </div>
+      </div>
+      <!-- other icons including the volume slider and all -->
+      <div class="extras">
+        <div>
+          <i class="fas fa-list-ul"></i>
+        </div>
+        <div>
+          <i class="fa-solid fa-volume-xmark"></i>
+        </div>
+
+        <div>
+          <i class="fas fa-volume-up"></i>
+        </div>
+        <div class="slidecontainer" style="width: 30%;">
+          <input
+            type="range"
+            min="0"
+            max="100"
+            value="0"
+            class="slider"
+            id="myRange"
+            style="margin-top: 0px;"
+          />
+        </div>
+        <div>
+          <i class="fas fa-expand-alt"></i>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
